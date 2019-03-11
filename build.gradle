@@ -15,6 +15,14 @@ configurations {
     }
 }
 
+buildscript {
+    dependencies {
+        classpath "io.spring.gradle:dependency-management-plugin:1.0.4.RELEASE"
+    }
+}
+
+ext['hibernate.version'] = '5.2.11.Final'
+
 repositories {
     mavenCentral()
 }
